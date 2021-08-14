@@ -12,7 +12,7 @@ testupload:
 	twine upload --repository testpypi -u __token__ dist/*
 
 upload:
-	echo twine upload -u __token__ dist/*
+	twine upload -u __token__ dist/*
 
 install:
 	pip install -e .
