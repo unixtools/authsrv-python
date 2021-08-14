@@ -9,10 +9,10 @@ tidy:
 	pylint authsrv
 
 testupload:
-	twine upload --repository testpypi dist/*
+	twine upload --repository testpypi -u `id -n -u` dist/*
 
 upload:
-	echo twine upload dist/*
+	echo twine upload -u `id -n -u` dist/*
 
 install:
 	pip install -e .
