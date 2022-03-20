@@ -18,7 +18,7 @@ def fetch(owner: str = None, user='', instance='') -> str:
     if owner is None:
         owner = getpass.getuser()
 
-    if user = '' or instance = '':
+    if user == '' or instance == '':
         return None
 
     try:
