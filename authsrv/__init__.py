@@ -13,6 +13,7 @@ __version__ = '0.0.9'
 
 _authsrv_py_global_cache = {}
 
+
 def fetch(owner: str = None, user='', instance='') -> str:
     '''Retrieve a stash from authsrv'''
 
@@ -22,7 +23,7 @@ def fetch(owner: str = None, user='', instance='') -> str:
     if user == '' or instance == '':
         return None
 
-    cache_key = "/".join([owner,user,instance])
+    cache_key = "/".join([owner, user, instance])
 
     # TODO: Give the cache a lifetime
 
